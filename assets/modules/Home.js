@@ -39,7 +39,21 @@ class Home {
             .catch((error) => {
                 console.log("ERREUR lors de l'appel api getReposInformations", error)
             })
-        this.updateHTMLProjects(response.data)
+        const recentsProjects = response.data.slice(-3)
+        // URL pour récupérer les langages d'un projet :
+        // https://api.github.com/repos/charline-studi/{nom-du-repo}/languages
+        for (let i = 0; i < recentsProjects.length; i++) {
+            const languagesUrl = recentsProjects[i].languages_url
+            const cleanedUrl = languagesUrl.replace("https://api.github.com", "")
+            const responseLanguages = await octokit
+                .request(`GET ${cleanedUrl}`)
+                .catch((error) => {
+                    console.log("ERREUR lors de l'appel api getReposInformations - langages", error)
+                })
+            const projectLanguages = responseLanguages.data
+            recentsProjects[i].languages = projectLanguages
+        }
+        this.updateHTMLProjects(recentsProjects)
     } 
 
     updateHTMLUser(APIdata) {
@@ -58,9 +72,21 @@ class Home {
             const project = projects[i]
             this.projectsTitle[htmlIndex].textContent = project.name
             this.projectsDescription[htmlIndex].textContent = project.description
-            const languages = project.topics
-            console.log(languages)
+            this.createHTMLLanguageTag(this.projectsTagsContainer[i], project.languages)
             htmlIndex++
+        }
+    }
+
+    createHTMLLanguageTag(div, languages) {
+        const arrayLanguages = Object.keys(languages)
+        for (let i = 0; i < arrayLanguages.length; i++) {
+            // Création dynamique
+            const span = document.createElement('span')
+            span.textContent = arrayLanguages[i]
+            div.appendChild(span)
+            // Création par chaîne de charactère : moins manipulable
+            // const spanRaw = `<span class="${}">${arrayLanguages[i]}</span>`
+            // div.innerHTML += spanRaw
         }
     }
 }
