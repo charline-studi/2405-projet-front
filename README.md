@@ -23,7 +23,7 @@ Ce cours est composé d'une série de 6 lives d'une heure, nous allons utiliser 
 | 02     | 28/05/2024 | 10h - 11h | On code un mini site pour présenter nos repo Github | https://app.studi.fr/v3/events/68572/replay |
 | 03     | 31/05/2024 | 10h - 11h | On code un mini site pour présenter nos repo Github | https://app.studi.fr/v3/events/68573/replay |
 | 04     | 07/06/2024 | 10h - 11h | On code un mini site pour présenter nos repo Github | https://app.studi.fr/v3/events/68575/replay |
-| 05     | 14/04/2024 | 10h - 11h | On code un mini site pour présenter nos repo Github | pas encore disponible                       |
+| 05     | 14/04/2024 | 10h - 11h | On code un mini site pour présenter nos repo Github | https://app.studi.fr/v3/events/68577/replay |
 | 06     | 21/04/2024 | 10h - 11h | On code un mini site pour présenter nos repo Github | pas encore disponible                       |
 
 ## Ressources
@@ -32,3 +32,4 @@ Ce cours est composé d'une série de 6 lives d'une heure, nous allons utiliser 
 - [Live server VS Code](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - [Liste des endpoints API rest](https://docs.github.com/en/rest/repos?apiVersion=2022-11-28)
 - [Octokit Rest.js](https://github.com/octokit/rest.js)
+- [Typo Inter sur Google Font](https://fonts.google.com/specimen/Inter)
