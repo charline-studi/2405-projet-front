@@ -24,7 +24,7 @@ Ce cours est composé d'une série de 6 lives d'une heure, nous allons utiliser 
 | 03     | 31/05/2024 | 10h - 11h | On code un mini site pour présenter nos repo Github | https://app.studi.fr/v3/events/68573/replay |
 | 04     | 07/06/2024 | 10h - 11h | On code un mini site pour présenter nos repo Github | https://app.studi.fr/v3/events/68575/replay |
 | 05     | 14/04/2024 | 10h - 11h | On code un mini site pour présenter nos repo Github | https://app.studi.fr/v3/events/68577/replay |
-| 06     | 21/04/2024 | 10h - 11h | On code un mini site pour présenter nos repo Github | pas encore disponible                       |
+| 06     | 21/04/2024 | 10h - 11h | On code un mini site pour présenter nos repo Github | https://app.studi.fr/v3/events/68576/replay |
 
 ## Ressources
 

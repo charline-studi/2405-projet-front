@@ -1,4 +1,5 @@
 @use "../abstracts/_variables" as var
+@use "../abstracts/_mixins" as mixin
 
 .button
     background-color: var.$light-grey
@@ -19,6 +20,4 @@
         height: 1.25rem
 
     &__label
-        font-family: 'Inter', sans-serif
-        font-size: 1.25rem
-        font-weight: 400
+        @include mixin.font(0.75rem)

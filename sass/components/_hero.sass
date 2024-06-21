@@ -1,0 +1,30 @@
+@use "../abstracts/_main" as abs
+
+.hero
+    background: abs.$grey
+    color: abs.$white
+    padding: abs.fct-rem(71) 2rem abs.fct-rem(58)
+    position: relative
+
+    &__subtitle
+        @include abs.mix-font(0.75rem, 600)
+        margin-bottom: abs.fct-rem(15)
+
+    &__title
+        @include abs.mix-font(2rem, 600)
+        margin-bottom: abs.fct-rem(35)
+
+    &__description
+        @include abs.mix-font(0.75rem)
+        margin-bottom: abs.fct-rem(32)
+
+    &__avatar
+        position: absolute
+        top: abs.fct-rem(22)
+        right: abs.fct-rem(-15)
+        @include abs.mix-circle(abs.fct-rem(137))
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
